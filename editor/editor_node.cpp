@@ -100,6 +100,7 @@
 #include "editor/plugins/path_2d_editor_plugin.h"
 #include "editor/plugins/path_editor_plugin.h"
 #include "editor/plugins/physical_bone_plugin.h"
+#include "editor/plugins/physics_particle_body_editor_plugin.h"
 #include "editor/plugins/polygon_2d_editor_plugin.h"
 #include "editor/plugins/resource_preloader_editor_plugin.h"
 #include "editor/plugins/root_motion_editor_plugin.h"
@@ -5694,6 +5695,7 @@ EditorNode::EditorNode() {
 	add_editor_plugin(memnew(SkeletonEditorPlugin(this)));
 	add_editor_plugin(memnew(SkeletonIKEditorPlugin(this)));
 	add_editor_plugin(memnew(PhysicalBonePlugin(this)));
+	add_editor_plugin(memnew(PhysicsParticleBodyEditorPlugin(this)));
 
 	for (int i = 0; i < EditorPlugins::get_plugin_count(); i++)
 		add_editor_plugin(EditorPlugins::create(i, this));
