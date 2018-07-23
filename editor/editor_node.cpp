@@ -5695,7 +5695,8 @@ EditorNode::EditorNode() {
 	add_editor_plugin(memnew(SkeletonEditorPlugin(this)));
 	add_editor_plugin(memnew(SkeletonIKEditorPlugin(this)));
 	add_editor_plugin(memnew(PhysicalBonePlugin(this)));
-	add_editor_plugin(memnew(PhysicsParticleBodyEditorPlugin(this)));
+	particle_body_plugin = memnew(PhysicsParticleBodyEditorPlugin(this));
+	add_editor_plugin(particle_body_plugin);
 
 	for (int i = 0; i < EditorPlugins::get_plugin_count(); i++)
 		add_editor_plugin(EditorPlugins::create(i, this));
