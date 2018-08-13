@@ -5261,6 +5261,8 @@ void SpatialEditor::_register_all_gizmos() {
 	register_gizmo_plugin(Ref<ReflectionProbeGizmoPlugin>(memnew(ReflectionProbeGizmoPlugin)));
 	register_gizmo_plugin(Ref<GIProbeGizmoPlugin>(memnew(GIProbeGizmoPlugin)));
 	register_gizmo_plugin(Ref<BakedIndirectLightGizmoPlugin>(memnew(BakedIndirectLightGizmoPlugin)));
+	register_gizmo_plugin(Ref<ParticlePrimitiveShapeSpatialGizmoPlugin>(memnew(ParticlePrimitiveShapeSpatialGizmoPlugin)));
+	register_gizmo_plugin(Ref<ParticleBodySpatialGizmoPlugin>(memnew(ParticleBodySpatialGizmoPlugin)));
 	register_gizmo_plugin(Ref<CollisionShapeSpatialGizmoPlugin>(memnew(CollisionShapeSpatialGizmoPlugin)));
 	register_gizmo_plugin(Ref<CollisionPolygonSpatialGizmoPlugin>(memnew(CollisionPolygonSpatialGizmoPlugin)));
 	register_gizmo_plugin(Ref<NavigationMeshSpatialGizmoPlugin>(memnew(NavigationMeshSpatialGizmoPlugin)));
